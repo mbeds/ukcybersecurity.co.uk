@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" class="scroll-smooth">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QCE2J4FJV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0QCE2J4FJV');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QCE2J4FJV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0QCE2J4FJV');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +37,8 @@
       "image": "https://ukcybersecuritytesting.co.uk/og-image.jpg",
       "@id": "https://ukcybersecuritytesting.co.uk",
       "url": "https://ukcybersecuritytesting.co.uk",
-      "telephone": "07986903415",
+      "telephone": "+447986903415",
+      "email": "matthew@ukcybersecuritytesting.co.uk",
       "priceRange": "£150-£5000",
       "address": {
         "@type": "PostalAddress",
@@ -65,187 +65,255 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #0a0a0c 0%, #121216 100%); }
         .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .service-card:hover { transform: translateY(-3px); box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.3); }
     </style>
 </head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QCE2J4FJV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-0QCE2J4FJV');
-    </script>
-<body class="bg-slate-50 text-slate-900 leading-normal">
+<body class="bg-slate-950 text-slate-100 leading-normal selection:bg-red-600 selection:text-white">
 
-    <nav class="bg-white border-b border-slate-200 py-4 px-6 sticky top-0 z-50 shadow-sm">
+    <!-- Navigation -->
+    <nav class="bg-[#121216]/90 backdrop-blur border-b border-slate-800 py-4 px-6 sticky top-0 z-50 shadow-md">
         <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
-            <div class="font-extrabold text-xl tracking-tight text-slate-900 uppercase">
-                UK CYBERSECURITY <span class="text-red-600 font-light italic underline">TESTING</span>
+            <div class="font-extrabold text-lg tracking-tight text-white uppercase flex items-center gap-2">
+                <span class="w-3 h-3 bg-red-600 rounded-sm inline-block"></span>
+                UK CYBERSECURITY <span class="text-red-500 font-light italic">TESTING</span>
             </div>
-            <div class="flex items-center gap-6 mt-2 md:mt-0 font-bold text-[11px] uppercase tracking-widest">
-                <a href="tel:07986903415" class="text-slate-600 hover:text-red-600 transition">07986 903415</a>
-                <a href="mailto:matthew@ukcybersecuritytesting.co.uk" class="bg-slate-900 text-white px-5 py-2 rounded hover:bg-red-600 transition">Request Audit</a>
+            <div class="flex items-center gap-6 mt-2 md:mt-0 font-bold text-xs uppercase tracking-widest">
+                <a href="tel:+447986903415" class="text-slate-400 hover:text-red-500 transition hidden sm:inline">+44 7986 903415</a>
+                <a href="#contact" class="bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700 transition shadow-sm">Request Audit</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero-gradient text-white py-20 px-6 text-center border-b-8 border-red-600">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight uppercase">
-                Independent <br><span class="text-red-500 italic text-3xl md:text-5xl">National Security Testing.</span>
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-24 px-6 text-center border-b-4 border-red-600 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-block font-mono text-xs text-red-500 uppercase tracking-widest mb-4 px-3 py-1 bg-red-950/40 border border-red-500/30 rounded">
+                Independent National Security Authority & Testing
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight uppercase tracking-tight">
+                Independent <br><span class="text-red-500 italic text-3xl md:text-5xl">Cybersecurity Auditing.</span>
             </h1>
-            <p class="text-xl text-slate-400 mb-8 leading-relaxed font-light">
-                Providing <strong>Nationwide</strong> independent auditing with specialized on-site support for <strong>Shropshire & Telford</strong>. Operational home of <strong>Red Dragon Security</strong>, as featured by the <strong>BBC</strong> and <strong>Reuters</strong>.
+            <p class="text-lg text-slate-300 mb-8 leading-relaxed font-light max-w-2xl mx-auto">
+                Providing <strong>Nationwide</strong> independent auditing with specialized on-site support for <strong>Shropshire & Telford</strong>. Led by <strong>Matthew Beddoes</strong> under <strong>Red Dragon Security</strong>, as featured by the <strong>BBC</strong> and <strong>Reuters</strong>.
             </p>
-            <div class="flex flex-wrap justify-center gap-4 text-xs font-bold uppercase tracking-widest">
-                <span class="text-red-500 border border-red-500/30 px-3 py-1 rounded italic">Red Dragon Security</span>
-                <span class="text-red-500 border border-red-500/30 px-3 py-1 rounded">Independent Auditor</span>
-                <span class="text-red-500 border border-red-500/30 px-3 py-1 rounded uppercase tracking-tighter text-red-300">Pre-Expert Specialist</span>
+            <div class="flex flex-wrap justify-center gap-3 text-xs font-bold uppercase tracking-widest">
+                <span class="text-red-400 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded">Red Dragon Security</span>
+                <span class="text-slate-300 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded">Matthew Beddoes</span>
+                <span class="text-slate-300 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded">Independent Auditor</span>
             </div>
         </div>
     </header>
 
-    <section class="max-w-4xl mx-auto -mt-6 px-6 relative z-10">
-        <div class="bg-white p-6 rounded shadow-xl border-l-4 border-red-600 italic text-center">
-            <p class="text-slate-700 text-sm leading-relaxed">
-                <strong>Strategic Independence:</strong> Operated by the specialists behind <strong>Red Dragon Security</strong>, we provide <strong>testing only</strong>. I do not perform repairs or sell IT products. This ensures 100% objective reports—giving your IT team the facts they need to secure your infrastructure.
+    <!-- Strategic Independence Banner -->
+    <section class="max-w-4xl mx-auto -mt-6 px-6 relative z-20">
+        <div class="bg-[#121216] p-6 rounded-lg shadow-xl border border-slate-800 border-l-4 border-red-600">
+            <p class="text-slate-300 text-sm leading-relaxed">
+                <strong class="text-white">Strategic Independence:</strong> Operated by Matthew Beddoes through <strong class="text-white">Red Dragon Security</strong>, we provide <strong class="text-white">testing only</strong>. We do not perform repairs or sell IT products. This ensures 100% objective reports—giving your team the facts needed to secure your infrastructure.
             </p>
         </div>
     </section>
 
-    <section id="services" class="max-w-6xl mx-auto py-20 px-6">
-        <h2 class="text-3xl font-black text-slate-900 uppercase text-center mb-12 italic tracking-tight underline underline-offset-8">Audit & Testing Services</h2>
+    <!-- Services Section -->
+    <section id="services" class="max-w-6xl mx-auto py-24 px-6">
+        <h2 class="text-3xl font-black text-white uppercase text-center mb-4 italic tracking-tight underline decoration-red-600 underline-offset-8">Audit & Testing Services</h2>
+        <p class="text-center text-slate-400 mb-12 text-sm uppercase tracking-widest">Transparent fixed pricing with zero vendor lock-in</p>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <div class="bg-white p-8 rounded-lg border border-slate-200 shadow service-card">
-                <h3 class="font-bold text-red-700 uppercase mb-2 italic underline text-lg tracking-tight">WordPress Security Check</h3>
-                <p class="text-sm text-slate-600 mb-6 italic">Deep-dive into website architecture. I find backdoors and weak spots missed by automated scanners—essential for UK SME resilience.</p>
-                <div class="text-2xl font-bold">£450 <span class="text-xs text-slate-400 font-normal italic uppercase tracking-widest">Remote Audit</span></div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div class="bg-[#121216] p-8 rounded-lg border border-slate-800 shadow service-card flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-red-500 uppercase mb-2 italic text-lg tracking-tight">WordPress Security Check</h3>
+                    <p class="text-sm text-slate-400 mb-6">Deep-dive into website architecture. Finding backdoors and weak spots missed by automated scanners—essential for UK SME resilience.</p>
+                </div>
+                <div class="text-2xl font-bold text-white pt-4 border-t border-slate-800/60">£450 <span class="text-xs text-slate-500 font-normal uppercase tracking-widest">Remote Audit</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-lg border border-slate-200 shadow service-card">
-                <h3 class="font-bold text-red-700 uppercase mb-2 italic underline text-lg tracking-tight">AI Fraud & Invoice Audit</h3>
-                <p class="text-sm text-slate-600 mb-4 italic">Testing "Digital Signatures" and SPF/DKIM to protect against AI-driven email spoofing and deepfake financial scams.</p>
-                <div class="text-2xl font-bold">£450 <span class="text-xs text-slate-400 font-normal italic uppercase tracking-widest">Remote Audit</span></div>
+            <div class="bg-[#121216] p-8 rounded-lg border border-slate-800 shadow service-card flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-red-500 uppercase mb-2 italic text-lg tracking-tight">AI Fraud & Invoice Audit</h3>
+                    <p class="text-sm text-slate-400 mb-6">Testing digital signatures and SPF/DKIM configurations to protect against AI-driven email spoofing and deepfake financial scams.</p>
+                </div>
+                <div class="text-2xl font-bold text-white pt-4 border-t border-slate-800/60">£450 <span class="text-xs text-slate-500 font-normal uppercase tracking-widest">Remote Audit</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-lg border-4 border-red-600 shadow-xl service-card">
-                <h3 class="font-bold text-red-700 uppercase mb-2 italic tracking-tighter underline text-lg">Strategic Consultation</h3>
-                <p class="text-sm text-slate-600 mb-4 font-bold uppercase italic text-center">1-Hour Expert Discussion & Advice.</p>
-                <p class="text-xs text-slate-500 mb-6 italic leading-relaxed">Direct 1-to-1 Q&A regarding risk mitigation or <strong>2026 UK Cyber Security & Resilience Bill</strong> compliance.</p>
-                <div class="text-2xl font-bold text-center">£250 <span class="text-xs text-slate-400 font-normal italic uppercase tracking-widest underline">Per Hour</span></div>
+            <div class="bg-[#121216] p-8 rounded-lg border-2 border-red-600 shadow-xl service-card flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-red-500 uppercase mb-2 italic tracking-tight text-lg">Strategic Consultation</h3>
+                    <p class="text-sm text-slate-300 mb-2 font-bold uppercase">1-Hour Expert Discussion & Advice.</p>
+                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">Direct 1-to-1 Q&A with Matthew Beddoes regarding risk mitigation or 2026 UK Cyber Security & Resilience Bill compliance.</p>
+                </div>
+                <div class="text-2xl font-bold text-white text-center pt-4 border-t border-slate-800/60">£250 <span class="text-xs text-slate-500 font-normal uppercase tracking-widest">Per Hour</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-lg border border-slate-200 shadow service-card">
-                <h3 class="font-bold text-red-700 uppercase mb-2 italic underline text-lg tracking-tight">Insurance Readiness Check</h3>
-                <p class="text-sm text-slate-600 mb-6 italic">Audit your tech against insurance mandates to ensure your Cyber Insurance remains valid under 2026 terms.</p>
-                <div class="text-2xl font-bold">£450 <span class="text-xs text-slate-400 font-normal italic uppercase tracking-widest">Fixed Fee</span></div>
+            <div class="bg-[#121216] p-8 rounded-lg border border-slate-800 shadow service-card flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-red-500 uppercase mb-2 italic text-lg tracking-tight">Insurance Readiness Check</h3>
+                    <p class="text-sm text-slate-400 mb-6">Audit your tech stack against insurance mandates to ensure your Cyber Insurance policy remains fully valid.</p>
+                </div>
+                <div class="text-2xl font-bold text-white pt-4 border-t border-slate-800/60">£450 <span class="text-xs text-slate-500 font-normal uppercase tracking-widest">Fixed Fee</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-lg border border-slate-200 shadow service-card">
-                <h3 class="font-bold text-red-700 uppercase mb-2 italic underline text-lg tracking-tight">Director Privacy Audit</h3>
-                <p class="text-sm text-slate-600 mb-6 italic">Forensic audit of personal digital footprints to remove data hackers use for targeted corporate social engineering.</p>
-                <div class="text-2xl font-bold">£450 <span class="text-xs text-slate-400 font-normal italic uppercase tracking-widest">Per Director</span></div>
+            <div class="bg-[#121216] p-8 rounded-lg border border-slate-800 shadow service-card flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-red-500 uppercase mb-2 italic text-lg tracking-tight">Director Privacy Audit</h3>
+                    <p class="text-sm text-slate-400 mb-6">Forensic audit of personal digital footprints to remove data hackers use for targeted corporate social engineering.</p>
+                </div>
+                <div class="text-2xl font-bold text-white pt-4 border-t border-slate-800/60">£450 <span class="text-xs text-slate-500 font-normal uppercase tracking-widest">Per Director</span></div>
             </div>
 
-            <div class="bg-white p-8 rounded-lg border border-slate-200 shadow service-card">
-                <h3 class="font-bold text-red-700 uppercase mb-2 italic underline text-lg tracking-tight">Physical "Site Sweep"</h3>
-                <p class="text-sm text-slate-600 mb-6 italic">Local on-site walk-through for Shropshire businesses to find hardware risks, unlocked ports, or unsecured data.</p>
-                <div class="text-2xl font-bold">£350+ <span class="text-xs text-slate-400 font-normal italic uppercase tracking-widest">On-Site Only</span></div>
+            <div class="bg-[#121216] p-8 rounded-lg border border-slate-800 shadow service-card flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-red-500 uppercase mb-2 italic text-lg tracking-tight">Physical "Site Sweep"</h3>
+                    <p class="text-sm text-slate-400 mb-6">Local on-site walk-through for Shropshire businesses to find hardware risks, unlocked network ports, or unsecured data.</p>
+                </div>
+                <div class="text-2xl font-bold text-white pt-4 border-t border-slate-800/60">£350+ <span class="text-xs text-slate-500 font-normal uppercase tracking-widest">On-Site Only</span></div>
             </div>
         </div>
 
-        <div class="max-w-4xl mx-auto bg-slate-100 p-8 rounded-xl border border-slate-200 mb-20 shadow-inner">
-            <h3 class="font-bold text-slate-900 uppercase mb-4 text-center italic tracking-tight underline">Shropshire & National Logistics</h3>
+        <!-- Logistics Box -->
+        <div class="max-w-4xl mx-auto bg-[#121216] p-8 rounded-xl border border-slate-800 mb-20 shadow-sm">
+            <h3 class="font-bold text-white uppercase mb-4 text-center italic tracking-tight">Shropshire & National Logistics</h3>
             <div class="grid md:grid-cols-2 gap-6 text-sm">
-                <div class="p-4 bg-white rounded border border-slate-300">
-                    <p class="font-bold text-red-700 underline mb-1 uppercase tracking-widest text-xs">Local Call-Out (Telford/Shrewsbury)</p>
-                    <p class="text-slate-600"><strong>£150.00</strong> Flat Fee for on-site visits within Shropshire. Specialized support for local SMEs.</p>
+                <div class="p-4 bg-slate-900 rounded border border-slate-800">
+                    <p class="font-bold text-red-500 mb-1 uppercase tracking-widest text-xs">Local Call-Out (Telford/Shrewsbury)</p>
+                    <p class="text-slate-400"><strong class="text-white">£150.00</strong> Flat Fee for on-site visits within Shropshire. Specialized support for local SMEs.</p>
                 </div>
-                <div class="p-4 bg-white rounded border border-slate-300">
-                    <p class="font-bold text-red-700 underline mb-1 uppercase tracking-widest text-xs">National Travel</p>
-                    <p class="text-slate-600"><strong>£150.00 + Expenses</strong> for site visits outside of Shropshire. Travel time charged at 50% hourly rate.</p>
+                <div class="p-4 bg-slate-900 rounded border border-slate-800">
+                    <p class="font-bold text-red-500 mb-1 uppercase tracking-widest text-xs">National Travel</p>
+                    <p class="text-slate-400"><strong class="text-white">£150.00 + Expenses</strong> for site visits outside of Shropshire. Travel time charged at 50% hourly rate.</p>
                 </div>
             </div>
         </div>
 
-        <h2 class="text-3xl font-black text-slate-900 uppercase text-center mb-12 italic tracking-tight underline underline-offset-8">Enterprise & Threat Intel</h2>
+        <!-- Enterprise & Threat Intel -->
+        <h2 class="text-3xl font-black text-white uppercase text-center mb-12 italic tracking-tight underline decoration-red-600 underline-offset-8">Enterprise & Threat Intel</h2>
         <div class="grid md:grid-cols-2 gap-8 mb-20">
-            <div class="bg-white p-10 rounded-xl border-4 border-slate-900 shadow-2xl relative">
-                <span class="absolute -top-4 right-6 bg-slate-900 text-white text-[10px] px-3 py-1 rounded font-bold uppercase tracking-widest italic">Site Logic</span>
-                <h3 class="text-xl font-extrabold uppercase mb-4 text-slate-900 italic underline">Full Site Integrity Audit</h3>
-                <p class="text-slate-600 mb-6 leading-relaxed italic font-medium">Complete forensic testing of a <strong>single physical location</strong>. Includes network stress-tests, staff awareness simulations, and 2026 compliance roadmap.</p>
-                <div class="text-3xl font-black italic">£2,500 - £5,000</div>
-                <p class="text-[10px] text-slate-400 uppercase font-bold mt-4 border-t pt-4 italic">
-                    *Per site. Standard rate covers up to 100 devices. Larger Shropshire infrastructures require a Custom Quote.
-                </p>
+            <div class="bg-[#121216] p-10 rounded-xl border border-slate-800 shadow-2xl relative flex flex-col justify-between">
+                <div>
+                    <span class="absolute -top-3 right-6 bg-red-600 text-white text-[10px] px-3 py-1 rounded font-bold uppercase tracking-widest">Enterprise</span>
+                    <h3 class="text-xl font-extrabold uppercase mb-4 text-white italic">Full Site Integrity Audit</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Complete forensic testing of a single physical location. Includes network stress-tests, staff awareness simulations, and compliance roadmaps.</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-white">£2,500 - £5,000</div>
+                    <p class="text-[10px] text-slate-500 uppercase font-bold mt-4 border-t border-slate-800 pt-4">
+                        *Per site. Standard rate covers up to 100 devices. Larger Shropshire infrastructures require a Custom Quote.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-slate-900 text-white p-10 rounded-xl border border-slate-700 shadow-2xl">
-                <h3 class="text-xl font-extrabold uppercase mb-4 text-red-500 italic underline tracking-tight">Monthly Threat Intelligence</h3>
-                <p class="text-slate-400 mb-6 leading-relaxed italic">Continuous 6-month term. Monitoring dark web leaks and specific UK-targeted exploits (CVEs) impacting your industry.</p>
-                <div class="text-3xl font-black italic">£250 / Month</div>
-                <p class="text-[10px] text-slate-500 uppercase font-bold mt-4 border-t border-slate-800 pt-4 italic text-center">6-Month Minimum Engagement (Remote - Nationwide)</p>
+            <div class="bg-[#121216] p-10 rounded-xl border border-slate-800 shadow-2xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-extrabold uppercase mb-4 text-red-500 italic">Monthly Threat Intelligence</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed text-sm">Continuous 6-month term managed by Matthew Beddoes. Monitoring dark web leaks and specific UK-targeted exploits (CVEs) impacting your industry.</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-white">£250 / Month</div>
+                    <p class="text-[10px] text-slate-500 uppercase font-bold mt-4 border-t border-slate-800 pt-4 text-center">6-Month Minimum Engagement (Remote - Nationwide)</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-slate-900 text-white py-24 px-6 overflow-hidden relative border-y-8 border-red-600">
+    <!-- Media / Authority Section -->
+    <section class="bg-[#121216] text-white py-24 px-6 overflow-hidden relative border-y border-slate-800">
         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
             <div class="z-10">
-                <h2 class="text-3xl font-black mb-6 text-red-500 uppercase italic underline underline-offset-8 leading-relaxed text-center md:text-left">The Evolution of the Dragon.</h2>
-                <p class="text-xl text-white font-bold italic mb-4">"The Black Dragon was the shadow of the Red Dragon."</p>
-                <p class="text-lg text-slate-400 leading-relaxed italic border-l-2 border-red-600 pl-4 mb-6 font-light">
-                    As featured by <strong>Reuters</strong> and the <strong>BBC</strong>, the methodology behind <strong>Red Dragon Security</strong> was forged in the shadows of the world's most secure digital registries. Today, that offensive-informed mindset is used exclusively to protect and audit UK infrastructure.
+                <h2 class="text-3xl font-black mb-6 text-red-500 uppercase italic leading-relaxed text-center md:text-left">The Evolution of the Dragon.</h2>
+                <p class="text-lg text-slate-300 font-bold italic mb-4">"The Black Dragon was the shadow of the Red Dragon."</p>
+                <p class="text-base text-slate-400 leading-relaxed border-l-2 border-red-600 pl-4 mb-6 font-light">
+                    As featured by <strong class="text-white">Reuters</strong> and the <strong class="text-white">BBC</strong>, the methodology behind <strong class="text-white">Red Dragon Security</strong> and lead engineer Matthew Beddoes was forged in the shadows of high-security digital environments. Today, that offensive-informed mindset is used exclusively to protect and audit UK infrastructure.
                 </p>
             </div>
-            <div class="text-sm space-y-4 font-bold uppercase tracking-widest text-slate-500">
-                <div class="border-b border-slate-800 pb-2">BBC Radio 2 Electoral Roll Expert</div>
-                <div class="border-b border-slate-800 pb-2 text-red-500">Reuters Featured Specialist</div>
-                <div class="border-b border-slate-800 pb-2">Tech London Advocate</div>
-                <div class="border-b border-slate-800 pb-2 italic text-slate-300 underline underline-offset-4 font-normal">Independent UK Auditor</div>
+            <div class="text-xs space-y-4 font-bold uppercase tracking-widest text-slate-400">
+                <div class="border-b border-slate-800 pb-2">BBC Radio 2 Security Commentator</div>
+                <div class="border-b border-slate-800 pb-2 text-red-400">Reuters Featured Specialist</div>
+                <div class="border-b border-slate-800 pb-2">LBC Radio Analyst</div>
+                <div class="border-b border-slate-800 pb-2 text-slate-300">Independent UK Auditor</div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-6 text-center bg-white border-t border-slate-200">
+    <!-- Contact & HubSpot Form Section -->
+    <section id="contact" class="py-24 px-6 text-center bg-slate-950">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl font-black mb-6 uppercase tracking-tighter italic text-slate-900 underline underline-offset-8">Secure <span class="text-red-600">Contact.</span></h2>
-            <p class="text-slate-600 mb-10 text-xl font-medium italic">
-                Independent testing in Shropshire and across the UK. Unbiased results.
+            <h2 class="text-4xl font-black mb-6 uppercase tracking-tight text-white underline decoration-red-600 underline-offset-8">Secure <span class="text-red-500">Contact.</span></h2>
+            <p class="text-slate-400 mb-10 text-lg font-medium">
+                Independent testing in Shropshire and across the UK. Unbiased results delivered directly by Matthew Beddoes.
             </p>
             
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-slate-50 p-8 rounded-xl border border-slate-200 shadow-sm">
-                    <h4 class="font-bold text-slate-900 uppercase mb-2 italic underline tracking-tight">Preliminary Risk Review</h4>
-                    <p class="text-sm text-slate-500 mb-6 italic leading-relaxed italic">Technical review of 3 core risks visible to the outside world.<br>Report delivered via email.</p>
-                    <p class="text-3xl font-black text-red-600 mb-6 italic">£150.00 <span class="text-xs font-normal text-slate-400 italic uppercase">Remote Only</span></p>
-                    <a href="mailto:matthew@ukcybersecuritytesting.co.uk" class="bg-red-600 text-white text-xl font-bold px-10 py-4 rounded hover:bg-slate-900 transition shadow-2xl inline-block uppercase tracking-widest">Order Review</a>
+            <div class="grid md:grid-cols-2 gap-8 mb-12 text-left">
+                <div class="bg-[#121216] p-8 rounded-xl border border-slate-800 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-bold text-white uppercase mb-2 italic tracking-tight">Preliminary Risk Review</h4>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">Technical review of 3 core risks visible to the outside world. Report delivered via email by Matthew Beddoes.</p>
+                        <p class="text-3xl font-black text-red-500 mb-6">£150.00 <span class="text-xs font-normal text-slate-500 uppercase">Remote Only</span></p>
+                    </div>
+                    <a href="mailto:matthew@ukcybersecuritytesting.co.uk" class="bg-red-600 text-white text-center font-bold px-8 py-3 rounded hover:bg-red-700 transition uppercase tracking-widest text-xs">Order Review</a>
                 </div>
 
-                <div class="bg-slate-900 text-white p-8 rounded-xl border border-slate-700 shadow-2xl flex flex-col justify-center">
-                    <h4 class="font-bold text-red-500 uppercase mb-4 italic tracking-widest text-xs">Verified Communication</h4>
-                    <div class="space-y-4 text-left">
-                        <p class="text-sm font-bold border-b border-slate-800 pb-2">TEL: <a href="tel:07986903415" class="text-blue-400">07986 903415</a></p>
-                        <p class="text-sm font-bold border-b border-slate-800 pb-2 italic text-blue-400">SIGNAL / WHATSAPP AVAILABLE</p>
-                        <p class="text-[10px] text-slate-500 uppercase leading-relaxed">Direct inquiries for Shropshire site audits or forensic nationwide intelligence monitoring.</p>
+                <div class="bg-[#121216] text-white p-8 rounded-xl border border-slate-800 shadow-2xl flex flex-col justify-center">
+                    <h4 class="font-bold text-red-500 uppercase mb-4 tracking-widest text-xs">Verified Direct Communication</h4>
+                    <div class="space-y-4">
+                        <p class="text-sm font-bold border-b border-slate-800 pb-2">DIRECT EMAIL: <a href="mailto:matthew@ukcybersecuritytesting.co.uk" class="text-slate-300 hover:text-white">matthew@ukcybersecuritytesting.co.uk</a></p>
+                        <p class="text-sm font-bold border-b border-slate-800 pb-2">TEL / SIGNAL / WHATSAPP: <a href="tel:+447986903415" class="text-slate-300 hover:text-white">+44 7986 903415</a></p>
+                        <p class="text-[10px] text-slate-500 uppercase leading-relaxed">Direct inquiries for Shropshire site audits, forensic intelligence monitoring, or consultation with Matthew Beddoes.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-12 text-xs text-slate-400 font-bold uppercase tracking-[0.4em] leading-loose">
-                UK CYBERSECURITY TESTING | POWERED BY RED DRAGON SECURITY | SERVING TELFORD, SHREWSBURY & NATIONWIDE
+            <!-- HubSpot Form Integration Container -->
+            <div class="bg-[#121216] p-8 md:p-12 rounded-xl border border-slate-800 shadow-2xl text-left max-w-2xl mx-auto">
+                <h3 class="text-xl font-extrabold uppercase mb-2 text-white italic">Request an Audit or Consultation</h3>
+                <p class="text-xs text-slate-400 mb-6 uppercase tracking-widest">Fill out the secure form below to initiate communication.</p>
+                
+                <!-- HubSpot Embed Script -->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                    region: "na1",
+                    portalId: "YOUR_PORTAL_ID",
+                    formId: "YOUR_FORM_GUID"
+                  });
+                </script>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-50 border-t border-slate-200 py-12 text-center text-slate-400 text-[10px] font-bold uppercase tracking-[0.5em]">
-        © 2026 MATTHEW BEDDOES | AS SEEN ON BBC, REUTERS & LBC
+    <!-- Footer -->
+    <footer class="bg-[#0a0a0c] border-t border-slate-800 py-12 text-center text-slate-400 text-xs">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col gap-6">
+            <div class="grid md:grid-cols-3 gap-6 text-left border-b border-slate-900 pb-8">
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-widest mb-3 text-[11px]">UK Cybersecurity Testing</h4>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">
+                        Independent technical auditing, WordPress security reviews, and physical Shropshire on-site sweeps. Operated by Matthew Beddoes.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-widest mb-3 text-[11px]">Ecosystem Network</h4>
+                    <ul class="space-y-1.5 text-[11px]">
+                        <li><a href="https://www.red-dragon-security.com" target="_blank" class="text-red-400 hover:underline">Red Dragon Security (Authority)</a></li>
+                        <li><a href="https://www.marchlandlabs.online" target="_blank" class="text-slate-400 hover:underline">MarchLabs (AI Research)</a></li>
+                        <li><a href="https://www.business-analytica.com" target="_blank" class="text-slate-400 hover:underline">Business Analytica (Enterprise Intel)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white uppercase tracking-widest mb-3 text-[11px]">Contact Info</h4>
+                    <p class="text-[11px] text-slate-500">Telford &bull; Shropshire &bull; Nationwide</p>
+                    <p class="text-[11px] text-slate-500 mt-1">matthew@ukcybersecuritytesting.co.uk</p>
+                    <p class="text-[11px] text-slate-500 mt-1">+44 7986 903415</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-slate-600 gap-2">
+                <span>&copy; 2026 Matthew Beddoes &bull; As Seen on BBC, Reuters & LBC</span>
+                <span>No Sales &bull; Testing Only &bull; Zero Vendor Lock-In</span>
+            </div>
+        </div>
     </footer>
 
 </body>
